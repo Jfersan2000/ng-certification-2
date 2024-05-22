@@ -1,0 +1,24 @@
+header {
+	text-align: center;
+
+	height: fit-content;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+}
+
+nav > button {
+	flex: 1;
+}
+
+nav > button.router-link-active {
+	border: 1px solid red;
+}
+
+main {
+  /* background-color: #ebeff5; */
+
+	padding: 32px;
+}

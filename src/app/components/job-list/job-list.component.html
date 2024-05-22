@@ -1,0 +1,6 @@
+<section>
+  @for (job of jobs; track $index) {
+    <app-job-item [job]="job" />
+    <hr />
+  }
+</section>

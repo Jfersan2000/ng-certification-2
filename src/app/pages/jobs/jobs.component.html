@@ -1,0 +1,24 @@
+<header>
+  <h1>Find your job</h1>
+</header>
+
+<nav>
+  <button
+    [routerLink]="['/', RoutesConfig.JOBS.path]"
+    routerLinkActive="router-link-active"
+    [routerLinkActiveOptions]="{ exact: true }"
+  >
+    JOBS
+  </button>
+  <button
+    [routerLink]="[RoutesConfig.JOBS.children.FAVORITES.path]"
+    routerLinkActive="router-link-active"
+    [routerLinkActiveOptions]="{ exact: true }"
+  >
+    FAVORITES
+  </button>
+</nav>
+
+<main>
+  <router-outlet />
+</main>

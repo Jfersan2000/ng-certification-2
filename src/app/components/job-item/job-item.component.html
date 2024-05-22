@@ -1,0 +1,33 @@
+<article>
+  <img [src]="job.companyLogo" alt="" />
+
+  <div>
+    <a [routerLink]="['/', RoutesConfig.JOBS.path, job.id]">
+      <h3>{{ job.title }}</h3>
+    </a>
+
+    <p>
+      <span>
+        <b>Company:</b>
+        {{ job.companyName }}
+      </span>
+      <span>
+        <b>Reference:</b>
+        {{ job.reference }}
+      </span>
+    </p>
+  </div>
+
+  @if (showStar) {
+    <span
+      id="star-{{ job.id }}"
+      class="icon-star"
+      [ngClass]="{
+        active: marked
+      }"
+      (click)="toggleFavorite()"
+      (keydown.enter)="toggleFavorite()"
+      tabindex="0"
+    ></span>
+  }
+</article>

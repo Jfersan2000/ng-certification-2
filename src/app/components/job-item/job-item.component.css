@@ -1,0 +1,37 @@
+article {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+	gap: 8px;
+}
+
+article > img {
+  height: 85px;
+}
+
+article > div > a {
+  display: block;
+  width: fit-content;
+}
+
+article > div > p {
+  display: flex;
+  flex-direction: row;
+	flex-wrap: wrap;
+  gap: 16px;
+}
+
+article > span.icon-star {
+  cursor: pointer;
+
+  font-size: 32px;
+  min-width: 32px;
+
+	align-self: center;
+
+  margin-left: auto;
+}
+
+article > span.icon-star.active {
+  color: yellow;
+}

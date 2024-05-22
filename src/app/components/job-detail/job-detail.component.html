@@ -1,0 +1,40 @@
+<section>
+  <nav>
+    <button [routerLink]="['/', RoutesConfig.JOBS.path]">BACK</button>
+  </nav>
+
+  <header>
+    <img [src]="job.companyLogo" alt="" />
+    <div>
+      <h3>{{ job.title }}</h3>
+
+      <div>
+        @for (type of job.types; track $index) {
+          <span>{{ type }}</span>
+        }
+        @for (industrie of job.industries; track $index) {
+          <span>{{ industrie }}</span>
+        }
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <p>
+      <b>Publish date:&nbsp;</b>
+      <span>{{ job.publishDate | date: 'shortDate' }}</span>
+    </p>
+    <p>
+      <b>Location:&nbsp;</b>
+      <span>{{ job.location }}</span>
+    </p>
+    <p>
+      <b>Reference:&nbsp;</b>
+      <span>{{ job.reference }}</span>
+    </p>
+    <p>
+      <b>Description:&nbsp;</b>
+      <span [innerHTML]="job.description"></span>
+    </p>
+  </main>
+</section>

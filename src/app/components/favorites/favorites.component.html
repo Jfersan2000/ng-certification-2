@@ -1,0 +1,8 @@
+<section>
+  @for (job of favorites; track $index) {
+    <app-job-item [job]="job" [showStar]="false" />
+    <hr />
+  } @empty {
+    <p>No favorites selected yet</p>
+  }
+</section>
