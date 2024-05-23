@@ -22,8 +22,6 @@ export class FavoritesComponent implements OnInit {
 
   ngOnInit(): void {
     this.jobsService.getJobs().subscribe(jobs => {
-      console.log('JobListComponent ~ this.jobsService.getJobs ~ jobs:', jobs);
-
       this.favorites = jobs.filter(job => this.favoritesService.contains(job.id));
     });
   }

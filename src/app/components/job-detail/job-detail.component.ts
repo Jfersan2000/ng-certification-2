@@ -42,7 +42,6 @@ export class JobDetailComponent implements OnInit {
       )
       .subscribe(job => {
         this.job = job;
-        console.log('JobDetailComponent ~ ngOnInit ~ this.job:', this.job);
 
         this.job.description = this.domSanitizer.sanitize(SecurityContext.HTML, this.job.description) ?? '';
       });

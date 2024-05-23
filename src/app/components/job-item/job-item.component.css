@@ -2,7 +2,7 @@ article {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-	gap: 8px;
+  gap: 8px;
 }
 
 article > img {
@@ -17,7 +17,7 @@ article > div > a {
 article > div > p {
   display: flex;
   flex-direction: row;
-	flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
@@ -27,7 +27,7 @@ article > span.icon-star {
   font-size: 32px;
   min-width: 32px;
 
-	align-self: center;
+  align-self: center;
 
   margin-left: auto;
 }

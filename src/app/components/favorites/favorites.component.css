@@ -1,9 +1,9 @@
 section {
-	display: flex;
-	flex-direction: column;
-	gap: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 section > p {
-	text-align: center;
+  text-align: center;
 }
